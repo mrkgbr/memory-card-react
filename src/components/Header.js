@@ -1,8 +1,9 @@
 import Scoreboard from "./Scoreboard";
+import "./Header.css";
 
 const Header = (props) => {
   return (
-    <header>
+    <header className="Header">
       <div className="Header-title">MEMORY GAME</div>
       <Scoreboard score={props.score} bestScore={props.bestScore} />
     </header>

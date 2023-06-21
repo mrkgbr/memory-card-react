@@ -101,7 +101,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header score={score} bestScore={bestScore} />
+      <div>
+        <Header score={score} bestScore={bestScore} />
+      </div>
       <Cardboard cards={cards} handleClick={handleClick} />
     </div>
   );
