@@ -42,6 +42,34 @@ function App() {
       id: 8,
       color: "grey",
     },
+    {
+      id: 9,
+      color: "pink",
+    },
+    {
+      id: 10,
+      color: "brown",
+    },
+    {
+      id: 11,
+      color: "cyan",
+    },
+    {
+      id: 12,
+      color: "gold",
+    },
+    {
+      id: 13,
+      color: "lime",
+    },
+    {
+      id: 14,
+      color: "olive",
+    },
+    {
+      id: 15,
+      color: "teal",
+    },
   ];
 
   const handleShuffle = (array) => {
@@ -63,6 +91,13 @@ function App() {
     false,
     false,
     false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
   ]);
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
@@ -73,7 +108,24 @@ function App() {
     }
     setScore(0);
     setCards([...handleShuffle(cards)]);
-    setClicked([false, false, false, false, false, false, false, false, false]);
+    setClicked([
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]);
   };
 
   const handleClick = (id) => {
